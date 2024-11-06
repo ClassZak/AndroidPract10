@@ -1,7 +1,26 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<!--resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Base.Theme.MyApplication2" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
     </style>
+</resources-->
+
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme. -->
+<style name="Base.Theme.MyApplication2" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Устанавливаем нулевой радиус для кнопок -->
+    <item name="materialButtonStyle">@style/NoCornerButton</item>
+</style>
+
+<style name="Theme.MyApplication2" parent="Base.Theme.MyApplication2" />
+
+<!-- Новый стиль для кнопок без закруглений -->
+<style name="NoCornerButton" parent="Widget.Material3.Button">
+    <item name="shapeAppearance">@style/NoCornerShape</item>
+</style>
+
+<!-- Настраиваем форму кнопок без закругления -->
+<style name="NoCornerShape" parent="ShapeAppearance.Material3.SmallComponent">
+    <item name="cornerSize">0dp</item>
+</style>
 </resources>
