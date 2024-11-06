@@ -26,8 +26,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
+                android:backgroundTint="@color/button_concrete_white"
                 android:onClick="onOrientClick"
-                android:text="ORIENT" />
+                android:text="ORIENT"
+                android:textColor="@color/white"
+                app:rippleColor="@color/black" />
 
             <Button
                 android:id="@+id/button2"
@@ -35,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:onClick="onGravityClick"
+                android:backgroundTint="@color/button_concrete_white"
                 android:text="GRAVITY" />
         </LinearLayout>
 
@@ -51,6 +55,7 @@
                 android:layout_weight="1"
                 android:onClick="onOrientClick"
                 android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/button_concrete_white"
                 android:text="ORIENT" />
 
             <Button
@@ -58,6 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:backgroundTint="@color/button_concrete_white"
                 android:layout_weight="1"
                 android:onClick="onGravityClick"
                 android:text="GRAVITY" />
@@ -74,6 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:onClick="onOrientClick"
+                android:backgroundTint="@color/button_concrete_white"
                 android:text="ORIENT" />
 
             <Button
@@ -82,6 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:onClick="onGravityClick"
+                android:backgroundTint="@color/button_concrete_white"
                 android:text="GRAVITY" />
         </LinearLayout>
 
