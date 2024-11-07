@@ -53,6 +53,27 @@ class MainActivity : AppCompatActivity() {
 
         orientationTextView.setText(outputResult)
     }
+
+    fun onApearButtonsClick(view: View):Unit{
+        var button:Button=view as Button
+        if (button != null)
+            when (view.id){
+                R.id.button1-> {
+                    DesappearButton(R.id.button1)
+                    AppearButton(R.id.button2)
+                }
+                R.id.button2->{
+                    DesappearButton(R.id.button2)
+                    AppearButton(R.id.button1)
+                }
+            }
+    }
+    fun AppearButton(buttonId: Int):Unit{
+        findViewById<Button>(buttonId).visibility= View.VISIBLE
+    }
+    fun DesappearButton(buttonId: Int):Unit{
+        findViewById<Button>(buttonId).visibility=View.INVISIBLE
+    }
 }
 
 
